@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     public float speed = 7.0f;
     public float sprintSpeed = 12.0f;
+    public float doubleJumpMultiplier = 0.5f;
 
     bool mSprinting = false;
 
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
 
     bool mJumping = false;
     public float jumpSpeed = 15;
+    bool canDoubleJump = false;
 
     // ?
     public float turnSmoothTime = 0.1f;
@@ -50,8 +52,16 @@ public class Player : MonoBehaviour
         if(Input.GetButtonDown("Jump") && !mJumping)
         {
             mJumping = true;
+            canDoubleJump = true;
             animator.SetTrigger("Jump");
             mSpeedY += jumpSpeed;
+        } else if (mJumping && canDoubleJump)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                mSpeedY += jumpSpeed * doubleJumpMultiplier;
+                canDoubleJump = false;
+            }
         }
 
         if (!controller.isGrounded)
