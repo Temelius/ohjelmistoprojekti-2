@@ -7,8 +7,12 @@ public class GameController : MonoBehaviour
 {
     public Collider coll;
 
+    public int GoToSceneNumber;
+
+
     public void OnTriggerEnter(Collider coll)
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(GoToSceneNumber);
     }
+
 }
