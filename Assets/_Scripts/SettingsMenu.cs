@@ -13,7 +13,7 @@ public class SettingsMenu : MonoBehaviour
 
     Resolution[] resolutions;
 
-    public Canvas canvas;
+    public GameObject settingsMenu;
     bool paused = false;
 
     private void Start()
@@ -43,9 +43,18 @@ public class SettingsMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!paused) canvas.gameObject.SetActive(true);
-            else canvas.gameObject.SetActive(false);
+            settingsMenu.SetActive(!settingsMenu.activeSelf);
         }
+    }
+
+    public void ResumeGame()
+    {
+        settingsMenu.SetActive(false);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
     public void SetResolution(int resolutionIndex)
