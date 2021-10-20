@@ -4,12 +4,13 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LowPolyWaterMaterial
-  m_Shader: {fileID: 4800000, guid: 16516895e8a79bf49a6562c3c3b84cbf, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: dfa09ff993fb5374ab08e741b11e5121, type: 3}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -126,7 +127,27 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_59b3da5efc7d4e20bad2978baa4d2dbb: 0
+    - Vector1_5cb19836cb2d47b2b35caaafdbf50b9d: 0
+    - Vector1_6d615cab2b9b41b6b520845a354adebe: 0
+    - Vector1_84aa6706a19844bfb2e1dc9e157e2a3e: 0
+    - Vector1_a4b17e849db5479f94d3ee74d50b298d: 0
+    - Vector1_b95ea9e111734a0fa31cf41f1d48e371: 1
+    - Vector1_e0bded5c19944fcdb379a1641b942787: 1
+    - Vector1_f354b36f55414a889b17d2318cbc45b2: 0
     - _Ambient: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -173,6 +194,9 @@ Material:
     - _ZWrite: 1
     - _isInnerAlphaBlendOrColor: 0
     m_Colors:
+    - Color_b8d8701fafd54b7590af69096c4f916a: {r: 0, g: 0, b: 0, a: 0}
+    - Color_ff85b466e9514b1b8e2f77e7c2c55c14: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_181846afb3a34932b17539d2b5817311: {r: 1, g: 1, b: 0, a: 0}
     - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.105146, a: -3.0206447}
     - _AnimationDirection: {r: 0, g: 0, b: 0, a: 0}
     - _AnimationTiling: {r: 0.04582553, g: 0.0182, b: 0.045714468, a: 0.027129691}
@@ -217,6 +241,7 @@ Material:
     - _WaveOffset: {r: -0, g: -0, b: -0, a: -0}
     - _WaveScale4: {r: 0, g: 0, b: 0, a: 0}
     - _WorldLightDir: {r: -0.030375138, g: -0.20139083, b: -0.97903997, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
