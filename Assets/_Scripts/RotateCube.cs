@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateCube : MonoBehaviour
 {
-    private void Update()
+    private void UpdateRotateCube()
     {
         transform.Rotate(1f, 10f * Time.deltaTime, 1f, Space.Self); 
     }
