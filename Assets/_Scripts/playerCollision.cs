@@ -13,11 +13,13 @@ public class playerCollision : MonoBehaviour
     void Start()
     {
         part = GetComponent<ParticleSystem>();
+       
     }
 
     void OnParticleCollision(GameObject other)
     {
-        if(other.tag == "Player") 
+        if(other.tag == "Player")
+           
         SceneManager.LoadScene(GotoSceneNumber);
     }
 }
