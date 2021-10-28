@@ -4,6 +4,10 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
 
+    public AudioSource skipidiiYks;
+    public AudioSource skipidiiKaks;
+
+
     private Animator animator;
     private CharacterController controller;
     public Camera cam;
@@ -13,6 +17,7 @@ public class Player : MonoBehaviour
     public float doubleJumpMultiplier = 0.5f;
 
     bool mSprinting = false;
+    bool isMoving = false;
 
     float mDesiredRotation = 0;
     public float RotationSpeed = 15;
@@ -37,6 +42,10 @@ public class Player : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         animator = gameObject.GetComponentInChildren<Animator>();
+
+        AudioSource[] skipi = GetComponents<AudioSource>();
+        skipidiiYks = skipi[0];
+        skipidiiKaks = skipi[1];
     }
 
     void Update()
@@ -49,18 +58,34 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
+
+        if (controller.velocity.x != 0)
+            isMoving = true;
+        else
+            isMoving = false;
+        if (isMoving)
+        {
+            if (!skipidiiYks.isPlaying)
+                skipidiiYks.Play();
+        } 
+        else
+            skipidiiYks.Stop();
+
+
         if(Input.GetButtonDown("Jump") && !mJumping)
         {
             mJumping = true;
             canDoubleJump = true;
             animator.SetTrigger("Jump");
             mSpeedY += jumpSpeed;
+            skipidiiKaks.Play();
         } else if (mJumping && canDoubleJump)
         {
             if (Input.GetButtonDown("Jump"))
             {
                 mSpeedY += jumpSpeed * doubleJumpMultiplier;
                 canDoubleJump = false;
+                skipidiiKaks.Play();
             }
         }
 
