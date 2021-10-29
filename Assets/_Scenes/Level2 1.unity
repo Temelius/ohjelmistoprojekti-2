@@ -10669,7 +10669,9 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_Name: pb_Mesh39442
+
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11017,7 +11019,9 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_Name: pb_Mesh39332
+
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13365,11 +13369,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7975909051231280341, guid: 6cc5c12b23adf3f4cac5311f1346b25e, type: 3}
       propertyPath: m_LocalRotation.y
+
       value: -1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 7975909051231280341, guid: 6cc5c12b23adf3f4cac5311f1346b25e, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+
       objectReference: {fileID: 0}
     - target: {fileID: 7975909052208245718, guid: 6cc5c12b23adf3f4cac5311f1346b25e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13401,6 +13407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cc5c12b23adf3f4cac5311f1346b25e, type: 3}
+
 --- !u!1001 &899320333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13486,10 +13493,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &903665197
 MeshCollider:
+
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 903665193}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -13498,6 +13507,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 616599c424a22c04b8b2d8ef06b99b66, type: 3}
+
 --- !u!4 &911772013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 448204, guid: 38c5866056ba81a4dab05ad3ee9b7bd1, type: 3}
@@ -21015,8 +21025,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852246104}
+
   m_LocalRotation: {x: 0.1829032, y: 0.000000008458084, z: -0.000000001573656, w: 0.98313093}
   m_LocalPosition: {x: 149.07, y: 7.1, z: 633.98}
+
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21094,7 +21106,9 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_Name: pb_Mesh39926
+
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
