@@ -18,6 +18,11 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
+        // Set cursor visibility and lock it on center of the screen.
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        // Set resolutions to dropdown menu
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
 
@@ -41,15 +46,36 @@ public class SettingsMenu : MonoBehaviour
 
     private void Update()
     {
+        // Show pausemenu with ESC
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            settingsMenu.SetActive(!settingsMenu.activeSelf);
+            // !settingsMenu.activeSelf
+            if (!paused)
+            {
+                PauseGame();
+            } else
+            {
+                ResumeGame();
+            }
         }
+    }
+
+    public void PauseGame()
+    {
+        settingsMenu.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0;
+        paused = true;
     }
 
     public void ResumeGame()
     {
         settingsMenu.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
+        paused = false;
     }
 
     public void ExitGame()
