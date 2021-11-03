@@ -4,7 +4,8 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     // Player audio sources
-    public AudioSource runSound;
+    public AudioSource runSound1;
+    public AudioSource runSound2;
     public AudioSource jumpSound;
 
     private Animator animator;
@@ -15,7 +16,6 @@ public class Player : MonoBehaviour
     public float doubleJumpMultiplier = 0.5f;
 
     bool isSprinting = false;
-    bool isMoving = false;
 
     float mDesiredRotation = 0;
     public float RotationSpeed = 15;
@@ -38,8 +38,9 @@ public class Player : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = gameObject.GetComponentInChildren<Animator>();
         AudioSource[] audio = GetComponents<AudioSource>();
-        runSound = audio[0];
-        jumpSound = audio[1];
+        runSound1 = audio[0];
+        runSound2 = audio[1];
+        jumpSound = audio[2];
     }
 
     // Executes PlayerMovement
@@ -56,18 +57,13 @@ public class Player : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         isSprinting = Input.GetKey(KeyCode.LeftShift);
 
-        // Check if player is moving and if running sound effects should be played
-        if (controller.velocity.x != 0)
-            isMoving = true;
-        else
-            isMoving = false;
-        if (isMoving)
+
+        // Check if player is moving and walking/running sounds should be stopped
+        if (controller.velocity.x == 0)
         {
-            if (!runSound.isPlaying)
-                runSound.Play();
+            runSound1.Stop();
+            runSound2.Stop();
         }
-        else
-            runSound.Stop();
 
         // Check if player is jumping / double jumping
         // If jumping, sound effect and animations should be played. 
