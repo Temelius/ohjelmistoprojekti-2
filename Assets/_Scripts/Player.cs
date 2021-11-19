@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float speed = 7.0f;
     public float sprintSpeed = 12.0f;
     public float doubleJumpMultiplier = 0.5f;
-
+ 
     bool isSprinting = false;
 
     float mDesiredRotation = 0;

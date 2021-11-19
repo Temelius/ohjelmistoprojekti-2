@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
         StartCoroutine(waitples());
         skipidii = GetComponent<AudioSource>();
         skipidii.Play();
+        
     }
 
     IEnumerator waitples()
@@ -26,7 +27,9 @@ public class GameController : MonoBehaviour
         
         yield return new WaitForSeconds(3);
 
+        
         SceneManager.LoadScene(GoToSceneNumber);
+        Destroy(gameObject);
     }
 
 }
