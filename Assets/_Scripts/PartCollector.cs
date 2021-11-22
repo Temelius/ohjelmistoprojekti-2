@@ -3,21 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PortalOnTrigger : MonoBehaviour
+public class PartCollector : MonoBehaviour
 {
-    public int GoToSceneNumber;
+    private GameController gameController;
+ 
+
     public Animator transition;
+    private Collider coll;
+    public int GoToSceneNumber;
     private AudioSource skipidii;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        gameController = FindObjectOfType<GameController>();
     }
 
     public void OnTriggerEnter(Collider coll)
@@ -36,7 +34,10 @@ public class PortalOnTrigger : MonoBehaviour
 
         yield return new WaitForSeconds(3);
 
-
+        gameController.saveData.levelsCompleted += 1;
+      
+        print(gameController.saveData.levelsCompleted);
         SceneManager.LoadScene(GoToSceneNumber);
     }
+
 }

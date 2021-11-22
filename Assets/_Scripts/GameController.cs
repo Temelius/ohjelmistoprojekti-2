@@ -7,10 +7,37 @@ public class GameController : MonoBehaviour
 {
     public SaveData saveData;
 
+    // Portals
+    public GameObject portal1;
+    public GameObject portal2;
+    public GameObject portal3;
+    public GameObject portal4;
+
     public Animator transition;
     private Collider coll;
     public int GoToSceneNumber;
     private AudioSource skipidii;
+
+    void Start()
+    {
+        int A = saveData.levelsCompleted;
+        switch (A)
+        {
+            case 0:
+                portal1.SetActive(true);
+                break;
+            case 1:
+                portal2.SetActive(true);
+                break;
+            case 2:
+                portal3.SetActive(true);
+                break;
+            case 3:
+                portal4.SetActive(true);
+                break;
+        }
+        print(A);
+    }
 
     private void Awake()
     {
@@ -27,6 +54,8 @@ public class GameController : MonoBehaviour
         {
             saveData = tempData;
         }
+
+        
     }
 
     public void OnTriggerEnter(Collider coll)
