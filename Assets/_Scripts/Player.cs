@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+    private GameController gameController;
+
     // Player audio sources
     public AudioSource runSound1;
     public AudioSource runSound2;
@@ -35,6 +37,7 @@ public class Player : MonoBehaviour
     // Fetch components from player
     void Start()
     {
+        gameController = FindObjectOfType<GameController>();
         controller = GetComponent<CharacterController>();
         animator = gameObject.GetComponentInChildren<Animator>();
         AudioSource[] audio = GetComponents<AudioSource>();
@@ -131,6 +134,16 @@ public class Player : MonoBehaviour
         Quaternion currentRotation = transform.rotation;
         Quaternion targetRotation = Quaternion.Euler(0, mDesiredRotation, 0);
         transform.rotation = Quaternion.Lerp(currentRotation, targetRotation, RotationSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Part")
+        {
+            print("Testit testailtu");
+            gameController.saveData.levelsCompleted += 1;
+            print(gameController.saveData.levelsCompleted);
+        } 
     }
 
 }

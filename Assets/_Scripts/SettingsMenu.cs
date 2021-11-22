@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
+    private GameController gameController;
+
     public AudioMixer audioMixer;
     public AudioMixer audioMixer2;
     public TMP_Dropdown resolutionDropdown;
@@ -18,8 +21,9 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
+        gameController = FindObjectOfType<GameController>();
+
         // Set cursor visibility and lock it on center of the screen.
-       
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
         // Set resolutions to dropdown menu
@@ -101,5 +105,12 @@ public class SettingsMenu : MonoBehaviour
     public void SetFullscreen (bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+    }
+
+    public void StartNewGame()
+    {
+        // Reset save file. Set levelsComplete to 0 and go back to main menu
+        gameController.saveData.levelsCompleted = 0;
+        SceneManager.LoadScene(0);
     }
 }
