@@ -61,8 +61,6 @@ public class GameController : MonoBehaviour
         {
             saveData = tempData;
         }
-
-        
     }
 
     // When player hits trigger, switch scene and 
@@ -73,7 +71,6 @@ public class GameController : MonoBehaviour
         StartCoroutine(SceneTransition());
         skipidii = GetComponent<AudioSource>();
         skipidii.Play();
-        
     }
 
     // Wait for 3 seconds for the animation to start
@@ -81,9 +78,7 @@ public class GameController : MonoBehaviour
     IEnumerator SceneTransition()
     {
         transition.SetTrigger("Start");
-        
         yield return new WaitForSeconds(3);
-
         SceneManager.LoadScene(GoToSceneNumber);
     }
 
@@ -96,7 +91,4 @@ public class GameController : MonoBehaviour
             saveData.SaveToDisk();
         }
     }
-
-    
-
 }
