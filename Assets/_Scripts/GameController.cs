@@ -13,13 +13,19 @@ public class GameController : MonoBehaviour
     public GameObject portal3;
     public GameObject portal4;
 
+    // Splash screen transition
+    // Crossfade on editor
     public Animator transition;
     private Collider coll;
+    // What scene should we go to
     public int GoToSceneNumber;
+
+    // skipidii sound
     private AudioSource skipidii;
 
     void Start()
     {
+        // Switch between save points and set portal active state accordingly
         int A = saveData.levelsCompleted;
         switch (A)
         {
@@ -36,6 +42,7 @@ public class GameController : MonoBehaviour
                 portal4.SetActive(true);
                 break;
         }
+        // console debug
         print(A);
     }
 
@@ -58,23 +65,25 @@ public class GameController : MonoBehaviour
         
     }
 
+    // When player hits trigger, switch scene and 
+    // play skipidii sound effect
     public void OnTriggerEnter(Collider coll)
     {
         
-        StartCoroutine(waitples());
+        StartCoroutine(SceneTransition());
         skipidii = GetComponent<AudioSource>();
         skipidii.Play();
         
     }
 
-    IEnumerator waitples()
+    // Wait for 3 seconds for the animation to start
+    // and then switch scene
+    IEnumerator SceneTransition()
     {
-        
         transition.SetTrigger("Start");
         
         yield return new WaitForSeconds(3);
 
-        
         SceneManager.LoadScene(GoToSceneNumber);
     }
 
