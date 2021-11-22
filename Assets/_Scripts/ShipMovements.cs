@@ -4,13 +4,13 @@ using System.Collections;
 
 public class ShipMovements : MonoBehaviour
 {
-    public float forwardSpeed = 25f, strafeSpeed = 7.5f, hoverSpeed = 5f;
+    public float forwardSpeed = 25f, sprintSpeed = 50f, strafeSpeed = 7.5f, hoverSpeed = 5f;
     private float activeForwardSpeed, activeStrafeSpeed, activeHoverSpeed;
-    private float forwardAcceleration = 2.5f, strafeAcceleration = 2f, hoverAcceleration = 2f;
+    private float forwardAcceleration = 2.5f, sprintAcceleration = 7.5f, strafeAcceleration = 2f, hoverAcceleration = 2f;
 
     public float lookRateSpeed = 90f;
     private Vector2 lookInput, screenCenter, mouseDistance;
-
+    bool isSprinting = false;
     private float rollInput;
     public float rollSpeed = 90f, rollAcceleration = 3.5f;
 
@@ -40,11 +40,16 @@ public class ShipMovements : MonoBehaviour
         mouseDistance.x * lookRateSpeed * Time.deltaTime,
         rollInput * rollSpeed * Time.deltaTime, Space.Self);
 
+        isSprinting = Input.GetKey(KeyCode.LeftShift);
 
         activeForwardSpeed = Mathf.Lerp(activeForwardSpeed, Input.GetAxisRaw("Vertical") * forwardSpeed, forwardAcceleration * Time.deltaTime);
         activeStrafeSpeed = Mathf.Lerp(activeStrafeSpeed, Input.GetAxisRaw("Horizontal") * strafeSpeed, strafeAcceleration * Time.deltaTime);
         activeHoverSpeed = Mathf.Lerp(activeHoverSpeed, Input.GetAxisRaw("Hover") * hoverSpeed, hoverAcceleration * Time.deltaTime);
 
+        if (isSprinting)
+        {
+            activeForwardSpeed = Mathf.Lerp(activeForwardSpeed, Input.GetAxisRaw("Vertical") * sprintSpeed, sprintAcceleration * Time.deltaTime);
+        }
         transform.position += transform.forward * activeForwardSpeed * Time.deltaTime;
         transform.position += (transform.right * activeStrafeSpeed * Time.deltaTime) + (transform.up * activeHoverSpeed * Time.deltaTime);
     }

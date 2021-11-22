@@ -8,7 +8,7 @@ using TMPro;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-
+    public AudioMixer audioMixer2;
     public TMP_Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
@@ -93,7 +93,11 @@ public class SettingsMenu : MonoBehaviour
     {
         audioMixer.SetFloat("volume", volume);
     }
-    
+    public void SetMusicVolume(float musicVolume)
+    {
+        audioMixer2.SetFloat("musicVolume", musicVolume);
+    }
+
     public void SetFullscreen (bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;

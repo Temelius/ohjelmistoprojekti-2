@@ -573,11 +573,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 100
+  sprintSpeed: 300
   strafeSpeed: 50
   hoverSpeed: 10
   lookRateSpeed: 90
-  rollSpeed: 90
-  rollAcceleration: 10
+  rollSpeed: 100
+  rollAcceleration: 50
 --- !u!65 &362799889
 BoxCollider:
   m_ObjectHideFlags: 0
