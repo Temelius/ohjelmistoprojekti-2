@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bgmusic : MonoBehaviour
+public class BgMusic : MonoBehaviour
 {
 
     void Awake()
