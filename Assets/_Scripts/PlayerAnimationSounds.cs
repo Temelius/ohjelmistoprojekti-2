@@ -11,44 +11,32 @@ public class PlayerAnimationSounds : MonoBehaviour
 
     void Start()
     {
+        // Get audiosources and assign them to variables
         AudioSource[] audio = GetComponents<AudioSource>();
         runSound1 = audio[0];
         runSound2 = audio[1];
         jumpSound = audio[2];
     }
 
-    void Update()
-    {
-     
-    }
-
     private void PlayerStepSound()
     {
-        runSound1.Play();
-        
+        runSound1.Play(); 
     }
 
     private void PlayerStepSoundTwo()
     {
         runSound2.Play();
-      
     }
 
     private void PlayerJumpSound()
     {
         jumpSound.Play();
-      
     }
-
 
     private void StopSounds()
     {
         jumpSound.Stop();
         runSound1.Stop();
         runSound2.Stop();
-
     }
-
-
-
 }

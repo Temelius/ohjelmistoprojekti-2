@@ -3,15 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class levelController : MonoBehaviour
 {
     public SaveData saveData;
-
-    // Portals
-    public GameObject portal1;
-    public GameObject portal2;
-    public GameObject portal3;
-    public GameObject portal4;
 
     // Splash screen transition
     // Crossfade on editor
@@ -22,29 +16,6 @@ public class GameController : MonoBehaviour
 
     // skipidii sound
     private AudioSource skipidii;
-
-    void Start()
-    {
-        // Switch between save points and set portal active state accordingly
-        int A = saveData.levelsCompleted;
-        switch (A)
-        {
-            case 0:
-                portal1.SetActive(true);
-                break;
-            case 1:
-                portal2.SetActive(true);
-                break;
-            case 2:
-                portal3.SetActive(true);
-                break;
-            case 3:
-                portal4.SetActive(true);
-                break;
-        }
-        // console debug
-        print(A);
-    }
 
     private void Awake()
     {
@@ -67,7 +38,7 @@ public class GameController : MonoBehaviour
     // play skipidii sound effect
     public void OnTriggerEnter(Collider coll)
     {
-        
+
         StartCoroutine(SceneTransition());
         skipidii = GetComponent<AudioSource>();
         skipidii.Play();
@@ -78,7 +49,7 @@ public class GameController : MonoBehaviour
     IEnumerator SceneTransition()
     {
         transition.SetTrigger("Start");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(GoToSceneNumber);
     }
 

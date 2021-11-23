@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    private GameController gameController;
 
+    public AudioMixer MusicMixer;
+    public AudioMixer EffectMixer;
     public TMP_Dropdown resolutionDropdown;
+    public Animator transition;
 
     Resolution[] resolutions;
 
@@ -18,10 +22,11 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
-        // Set cursor visibility and lock it on center of the screen.
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        gameController = FindObjectOfType<GameController>();
 
+        // Set cursor visibility and lock it on center of the screen.
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
         // Set resolutions to dropdown menu
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
@@ -72,8 +77,8 @@ public class SettingsMenu : MonoBehaviour
     public void ResumeGame()
     {
         settingsMenu.SetActive(false);
+        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
         paused = false;
     }
@@ -89,13 +94,28 @@ public class SettingsMenu : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void SetVolume (float volume)
+    public void SetMusicVolume (float mVolume)
     {
-        audioMixer.SetFloat("volume", volume);
+        MusicMixer.SetFloat("mVolume", mVolume);
     }
-    
+
+    public void SetEffectsVolume(float eVolume)
+    {
+        EffectMixer.SetFloat("eVolume", eVolume);
+    }
+
     public void SetFullscreen (bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
     }
+
+    public void StartNewGame()
+    {
+        // Reset save file. Set levelsComplete to 0 and go back to main menu
+        gameController.saveData.levelsCompleted = 0;
+        transition.SetTrigger("Start");
+        print(gameController.saveData.levelsCompleted);
+        SceneManager.LoadScene(0);
+    }
+
 }

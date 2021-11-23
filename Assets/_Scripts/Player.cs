@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float speed = 7.0f;
     public float sprintSpeed = 12.0f;
     public float doubleJumpMultiplier = 0.5f;
-
+ 
     bool isSprinting = false;
 
     float mDesiredRotation = 0;
@@ -132,5 +132,6 @@ public class Player : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(0, mDesiredRotation, 0);
         transform.rotation = Quaternion.Lerp(currentRotation, targetRotation, RotationSpeed * Time.deltaTime);
     }
+
 
 }
