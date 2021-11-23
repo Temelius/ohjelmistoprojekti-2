@@ -10,8 +10,10 @@ public class SettingsMenu : MonoBehaviour
 {
     private GameController gameController;
 
-    public AudioMixer audioMixer;
+    public AudioMixer MusicMixer;
+    public AudioMixer EffectMixer;
     public TMP_Dropdown resolutionDropdown;
+    public Animator transition;
 
     Resolution[] resolutions;
 
@@ -92,9 +94,14 @@ public class SettingsMenu : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void SetVolume (float volume)
+    public void SetMusicVolume (float mVolume)
     {
-        audioMixer.SetFloat("volume", volume);
+        MusicMixer.SetFloat("mVolume", mVolume);
+    }
+
+    public void SetEffectsVolume(float eVolume)
+    {
+        EffectMixer.SetFloat("eVolume", eVolume);
     }
 
     public void SetFullscreen (bool isFullscreen)
@@ -106,6 +113,9 @@ public class SettingsMenu : MonoBehaviour
     {
         // Reset save file. Set levelsComplete to 0 and go back to main menu
         gameController.saveData.levelsCompleted = 0;
+        transition.SetTrigger("Start");
+        print(gameController.saveData.levelsCompleted);
         SceneManager.LoadScene(0);
     }
+
 }

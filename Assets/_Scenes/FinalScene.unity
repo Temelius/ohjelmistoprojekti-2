@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 432761707, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetEffectsVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 2481667766170540274, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -226,6 +230,18 @@ PrefabInstance:
       propertyPath: guideMessage
       value: Explore and find portals to nearby islands
       objectReference: {fileID: 0}
+    - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: MusicMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+    - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1497870300}
+    - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: EffectMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
     - target: {fileID: 2481667766399480749, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -601,7 +617,7 @@ AudioSource:
   m_GameObject: {fileID: 362799887}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
   m_audioClip: {fileID: 8300000, guid: d530006ad29993b439ef00858711b836, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.51
@@ -1484,13 +1500,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497870299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee677b241ed5ced45aea05ecc703245b, type: 3}
+  m_Script: {fileID: 11500000, guid: e303f11f71e8ad54499acb610a7fbf60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 1497870300}
-  coll: {fileID: 0}
   GoToSceneNumber: 2
-  skipidii: {fileID: 0}
 --- !u!1001 &1909630204
 PrefabInstance:
   m_ObjectHideFlags: 0

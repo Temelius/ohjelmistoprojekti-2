@@ -3566,7 +3566,7 @@ AudioSource:
   m_GameObject: {fileID: 364706593}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
   m_audioClip: {fileID: 8300000, guid: 144e390990dfd3c4287dbf21b4c82a3d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.801
@@ -15520,7 +15520,7 @@ AudioSource:
   m_GameObject: {fileID: 961587455}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
   m_audioClip: {fileID: 8300000, guid: 70a033a625222ea478c8df9178fa1c40, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -15636,7 +15636,7 @@ AudioSource:
   m_GameObject: {fileID: 961587455}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5167a3c0588d9aa418bf1292a53c1097, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -15732,7 +15732,7 @@ AudioSource:
   m_GameObject: {fileID: 961587455}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
   m_audioClip: {fileID: 8300000, guid: e651cdd59a7f0e14ab8e17897bb405bc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -16639,11 +16639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9045867958860976909, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.21798807
+      value: 0.21798803
       objectReference: {fileID: 0}
     - target: {fileID: 9045867958860976909, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.009878326
+      value: 0.009878331
       objectReference: {fileID: 0}
     - target: {fileID: 9045867958860976909, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -16651,7 +16651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9045867958860976909, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.04417852
+      value: -0.044178545
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
@@ -27362,6 +27362,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 432761707, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetEffectsVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 2481667766170540274, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -27458,6 +27462,18 @@ PrefabInstance:
       propertyPath: guideMessage
       value: Find the missing part
       objectReference: {fileID: 0}
+    - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: MusicMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+    - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1884342759}
+    - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: EffectMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
     - target: {fileID: 2481667766399480749, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -29716,10 +29732,10 @@ MonoBehaviour:
     someString: meep
     levelsCompleted: 0
     saveOnDestroy: 1
-  portal1: {fileID: 0}
-  portal2: {fileID: 0}
-  portal3: {fileID: 0}
-  portal4: {fileID: 0}
+  portal1: {fileID: 1564458437}
+  portal2: {fileID: 1979004230}
+  portal3: {fileID: 1307172742}
+  portal4: {fileID: 404993651}
   transition: {fileID: 1884342759}
   GoToSceneNumber: 1
 --- !u!1001 &1756252741
@@ -32604,7 +32620,7 @@ AudioSource:
   m_GameObject: {fileID: 2122083575}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 48e448fef8fa912488835fa6d6dc8baa, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 53fd9bc98b930704c83ed28b41dc14dd, type: 2}
   m_audioClip: {fileID: 8300000, guid: 144e390990dfd3c4287dbf21b4c82a3d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.821
