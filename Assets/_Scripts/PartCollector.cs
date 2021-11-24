@@ -32,7 +32,7 @@ public class PartCollector : MonoBehaviour
 
         transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
         gameController.saveData.levelsCompleted += 1;
       

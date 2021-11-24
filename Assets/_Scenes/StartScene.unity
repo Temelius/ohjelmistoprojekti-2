@@ -9144,7 +9144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78345a1671cf45744a01d9934e5a35de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoToSceneNumber: 4
+  GoToSceneNumber: 5
   transition: {fileID: 2124164295}
 --- !u!82 &254341422
 AudioSource:
@@ -62878,7 +62878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78345a1671cf45744a01d9934e5a35de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoToSceneNumber: 2
+  GoToSceneNumber: 4
   transition: {fileID: 2124164295}
 --- !u!82 &1711839630
 AudioSource:
@@ -81616,31 +81616,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1385279085714868082, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017207016
+      value: -0.000000017207007
       objectReference: {fileID: 0}
     - target: {fileID: 1385279085714868082, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -4.659362e-10
+      value: 4.6593573e-10
       objectReference: {fileID: 0}
     - target: {fileID: 9045867957740659726, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.008951925
+      value: 0.008951926
       objectReference: {fileID: 0}
     - target: {fileID: 9045867957740659726, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -3.8575118e-10
+      value: 6.2226485e-10
       objectReference: {fileID: 0}
     - target: {fileID: 9045867957740659726, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.4533541e-12
+      value: -5.570692e-12
       objectReference: {fileID: 0}
     - target: {fileID: 9045867957806402671, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000001720007
+      value: -0.00000001720006
       objectReference: {fileID: 0}
     - target: {fileID: 9045867957806402671, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -4.6614135e-10
+      value: 4.6614107e-10
       objectReference: {fileID: 0}
     - target: {fileID: 9045867958860976909, guid: f3b2e6d3224ed1340b8571274c9cc83e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -81778,6 +81778,10 @@ PrefabInstance:
     - target: {fileID: 2481667766170540278, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: m_Name
       value: SettingsCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481667766170540284, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
+      propertyPath: guideMessage
+      value: Explore and find portals to new levels
       objectReference: {fileID: 0}
     - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: MusicMixer
