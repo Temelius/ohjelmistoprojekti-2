@@ -7,11 +7,8 @@ public class GameController : MonoBehaviour
 {
     public SaveData saveData;
 
-    // Portals
-    public GameObject portal1;
-    public GameObject portal2;
-    public GameObject portal3;
-    public GameObject portal4;
+    public List<GameObject> objList;
+
 
     // Splash screen transition
     // Crossfade on editor
@@ -27,20 +24,8 @@ public class GameController : MonoBehaviour
     {
         // Switch between save points and set portal active state accordingly
         int A = saveData.levelsCompleted;
-        switch (A)
-        {
-            case 0:
-                portal1.SetActive(true);
-                break;
-            case 1:
-                portal2.SetActive(true);
-                break;
-            case 2:
-                portal3.SetActive(true);
-                break;
-            case 3:
-                portal4.SetActive(true);
-                break;
+        if (objList.Count > 0) {
+        objList[A].SetActive(true);
         }
         // console debug
         print(A);

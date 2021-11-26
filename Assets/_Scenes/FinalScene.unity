@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481667766170540284, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: guideMessage
-      value: Explore and find portals to nearby islands
+      value: Find black hole that will take you home
       objectReference: {fileID: 0}
     - target: {fileID: 2481667766170540285, guid: 1bdfa57d6461dbe45856bed41c83b4f6, type: 3}
       propertyPath: MusicMixer
@@ -588,8 +588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3a2af67b12da5409aa453dd62cf957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 100
-  sprintSpeed: 300
+  forwardSpeed: 50
+  sprintSpeed: 200
   strafeSpeed: 50
   hoverSpeed: 10
   lookRateSpeed: 90
@@ -6167,15 +6167,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802898525}
-  m_LocalRotation: {x: 0.49674773, y: 0.49674773, z: 0.5032314, w: 0.5032314}
+  m_LocalRotation: {x: 0.6722964, y: 0.6722965, z: 0.21912889, w: 0.21912904}
   m_LocalPosition: {x: -779, y: 16.7, z: 148}
-  m_LocalScale: {x: 3.4786935, y: 5045.063, z: 2.2442794}
+  m_LocalScale: {x: 5.71932, y: 8294.588, z: 3.6898196}
   m_Children:
   - {fileID: 1789678943}
   - {fileID: 773495330}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 143.894, z: 90}
 --- !u!114 &802898532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6195,10 +6195,7 @@ MonoBehaviour:
     someString: meep
     levelsCompleted: 0
     saveOnDestroy: 1
-  portal1: {fileID: 0}
-  portal2: {fileID: 0}
-  portal3: {fileID: 0}
-  portal4: {fileID: 0}
+  objList: []
   transition: {fileID: 1497870300}
   GoToSceneNumber: 0
 --- !u!1001 &866877855
@@ -6490,7 +6487,7 @@ PrefabInstance:
     - target: {fileID: 2908955503758336734, guid: 0a09c5eef8d635143940336e3dbea931, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2632589c21d643945a1af83bee6df01f, type: 3}
+      objectReference: {fileID: 21300000, guid: da629da7de1eb264690e79ad71465b2b, type: 3}
     - target: {fileID: 2908955504115266529, guid: 0a09c5eef8d635143940336e3dbea931, type: 3}
       propertyPath: m_IsActive
       value: 1
