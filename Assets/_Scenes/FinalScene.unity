@@ -6000,7 +6000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78345a1671cf45744a01d9934e5a35de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoToSceneNumber: 0
+  GoToSceneNumber: 6
   transition: {fileID: 1497870300}
 --- !u!82 &802898527
 AudioSource:
@@ -6197,7 +6197,7 @@ MonoBehaviour:
     saveOnDestroy: 1
   objList: []
   transition: {fileID: 1497870300}
-  GoToSceneNumber: 0
+  GoToSceneNumber: 6
 --- !u!1001 &866877855
 PrefabInstance:
   m_ObjectHideFlags: 0
