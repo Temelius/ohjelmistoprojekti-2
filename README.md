@@ -1,12 +1,15 @@
 ![Partronaut cover image](/DocAssets/coverart.png)
 # ohjelmistoprojekti-2
-This game was developed as a project on software project 2 course in [Haaga-Helia University of Applied Sciences](https://www.haaga-helia.fi/en).
+This game was developed as a project on Software Project 2 course in [Haaga-Helia University of Applied Sciences](https://www.haaga-helia.fi/en).
 Partronaut is available free on itch.io
 ## Creators
-* [Joonas](https://github.com/joonasrom)
-* [Salla](https://github.com/sallasalmi)
-* [Teemu](https://github.com/Temelius)
-* [Lauri](https://github.com/l1l1l1l1l)
+[Joonas](https://github.com/joonasrom): Programming, Project Management
+
+[Salla](https://github.com/sallasalmi): Level Design
+
+[Teemu](https://github.com/Temelius): Programming, UI, Git
+
+[Lauri](https://github.com/l1l1l1l1l): 3D modeling, Unity VFX
 ## Licences
 ```
 Celestial by Scott Buckley | https://soundcloud.com/scottbuckley
