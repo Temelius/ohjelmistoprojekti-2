@@ -8,3 +8,9 @@ Partronaut is available free on itch.io
 * [Teemu](https://github.com/Temelius)
 * [Lauri](https://github.com/l1l1l1l1l)
 ## Licences
+```
+Celestial by Scott Buckley | https://soundcloud.com/scottbuckley
+Music promoted by https://www.free-stock-music.com
+Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+```
