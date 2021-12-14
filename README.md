@@ -18,3 +18,37 @@ Music promoted by https://www.free-stock-music.com
 Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 ```
+### Used assets
+Cinemachine, Polybrush and ProBuilder by Unity Technologies
+
+[Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353) 
+by Render Knight
+
+[Low Poly Cliff Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-cliff-pack-67289),
+[Low Poly Rock Pack](https://assetstore.unity.com/packages/3d/environments/low-poly-rock-pack-57874),
+[Low Poly Tree Pack](https://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-tree-pack-57866)
+by Broken Vector
+
+[Low Poly Pack](https://assetstore.unity.com/packages/3d/environments/low-poly-pack-94605)
+by Andrey Graphics
+
+[Low-Poly Simple Nature Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153) 
+by JustCreate
+
+[LOWPOLY - Spaceship](https://assetstore.unity.com/packages/3d/environments/sci-fi/lowpoly-spaceship-183012)
+by IV team
+
+[Low poly styled rocks](https://assetstore.unity.com/packages/3d/props/exterior/low-poly-styled-rocks-43486)
+by Daniel Robnik
+
+[LowPoly Water](https://assetstore.unity.com/packages/tools/particles-effects/lowpoly-water-107563) Plane Generation Script 
+by Ebru Dogan
+
+[Polygonal's Low-Poly Particle Pack](https://assetstore.unity.com/packages/p/polygonal-s-low-poly-particle-pack-118355) 
+by Polygonal Stuff
+
+[Stylized Astronaut](https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi/stylized-astronaut-114298)
+by PULSAR BYTES
+
+[Yughues Free Stylized Foliages](https://assetstore.unity.com/packages/3d/vegetation/yughues-free-stylized-foliages-13392)
+by Nobiax / Yughues
