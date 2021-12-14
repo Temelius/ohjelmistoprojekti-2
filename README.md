@@ -18,7 +18,7 @@ Music promoted by https://www.free-stock-music.com
 Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 ```
-### Used assets
+## Used assets
 Cinemachine, Polybrush and ProBuilder by Unity Technologies
 
 [Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353) 
