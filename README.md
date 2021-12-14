@@ -19,7 +19,7 @@ Attribution 4.0 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/
 ```
 ## Used assets
-Cinemachine, Polybrush and ProBuilder by Unity Technologies
+Cinemachine, Polybrush, ProBuilder and Terrain Sample Asset Pack by Unity Technologies
 
 [Fantasy Skybox FREE](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353) 
 by Render Knight
@@ -52,3 +52,22 @@ by PULSAR BYTES
 
 [Yughues Free Stylized Foliages](https://assetstore.unity.com/packages/3d/vegetation/yughues-free-stylized-foliages-13392)
 by Nobiax / Yughues
+
+[Fish - PolyPack](https://assetstore.unity.com/packages/3d/characters/animals/fish/fish-polypack-202232)
+by Alstra Infinite
+
+[Foam Textures](https://assetstore.unity.com/packages/2d/textures-materials/water/foam-textures-72313)
+by A dog's life software
+
+[Free Low Poly Desert Pack](https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709)
+by 23 Space Robots and Counting...
+
+[Lowpoly Flowers](https://assetstore.unity.com/packages/3d/vegetation/plants/lowpoly-flowers-47083)
+by chlyang
+
+[Simplistic Low Poly Nature](https://assetstore.unity.com/packages/3d/environments/simplistic-low-poly-nature-93894)
+by Acorn Bringer
+
+[Stylize Snow Texture](https://assetstore.unity.com/packages/2d/textures-materials/water/stylize-snow-texture-153579),
+[Stylize Water Texture](https://assetstore.unity.com/packages/2d/textures-materials/water/stylize-water-texture-153577)
+by LowlyPoly
