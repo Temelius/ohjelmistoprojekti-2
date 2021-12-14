@@ -115,7 +115,7 @@ public class SettingsMenu : MonoBehaviour
         gameController.saveData.levelsCompleted = 0;
         transition.SetTrigger("Start");
         print(gameController.saveData.levelsCompleted);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
 }
