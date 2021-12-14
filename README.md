@@ -1,7 +1,8 @@
 ![Partronaut cover image](/DocAssets/coverart.png)
 # ohjelmistoprojekti-2
 This game was developed as a project on Software Project 2 course in [Haaga-Helia University of Applied Sciences](https://www.haaga-helia.fi/en).
-Partronaut is available free on itch.io
+
+[Partronaut is available for free on itch.io](https://temelius.itch.io/partronaut)
 ## Creators
 [Joonas](https://github.com/joonasrom): Programming, Project Management
 
